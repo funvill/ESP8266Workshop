@@ -176,6 +176,8 @@ void loop()
   url += String( EEPROM_PrivateKey ) ; 
   url += "&celsius=" ;
   url += String( celsius ) ; 
+  url += "&device=" ;
+  url += String( deviceName ) ;   
   
   // Send the HTTP REST request to the server 
   Serial.println("[HTTP.Client] GET " + String(url) );
